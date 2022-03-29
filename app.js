@@ -59,20 +59,11 @@ $(function() {
     })
 
     // ACCORDION
-    $("[data-collapse]").on('click', function(event) {
+    $(".accordion-item").on('click', function(event) {
         event.preventDefault()
 
-        let blockId = $(this).data('collapse')
-
-        // ACCORDION TOGGLE
-
-        if ($(".accordion").hasClass('one')) {
-            $(".accordion-item").not($(this)).removeClass('active')
-            $(".accordion-content").not($(this)).slideUp(200)
-        }
-
-        // $(blockId).slideToggle(200)
         $(this).toggleClass('active')
+        $('.accordion-item').not(this).removeClass('active')
         
     })
 
