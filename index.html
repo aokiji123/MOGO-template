@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8eac375992.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/jpg" href="assets/images/avatar.png"/>
     <title>Mogo</title>
-</head>
-<body>
+</head> <!-- head -->
 
+
+
+<body>
 
 <header class="header" id="header">
     <div class="container">
@@ -18,15 +21,15 @@
             <div class="header-logo" data-scroll="#intro">MoGo</div>
 
             <nav class="nav" id="nav">
-                <a class="nav-link" id="nav-link" href="#" data-scroll="#about">About</a>
-                <a class="nav-link" id="nav-link" href="#" data-scroll="#services">Services</a>
-                <a class="nav-link" id="nav-link" href="#" data-scroll="#team">Team</a>
-                <a class="nav-link" id="nav-link" href="#" data-scroll="#works">Works</a>
-                <a class="nav-link" id="nav-link" href="#" data-scroll="#blogs">Blogs</a>
-                <a class="nav-link" id="nav-link">
+                <a class="nav-link" href="#" data-scroll="#about">About</a>
+                <a class="nav-link" href="#" data-scroll="#team">Team</a>
+                <a class="nav-link" href="#" data-scroll="#works">Works</a>
+                <a class="nav-link" href="#" data-scroll="#blogs">Blogs</a>
+                <a class="nav-link" href="#" data-scroll="#services">Services</a>
+                <a class="nav-link">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-                <a class="nav-link" id="nav-link">
+                <a class="nav-link">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </nav>
@@ -36,8 +39,7 @@
             </button>
         </div>
     </div>
-</header>
-
+</header> <!-- header -->
 
 <div class="page">
 
@@ -74,8 +76,7 @@
             </div>
         </div>
 
-    </div><!-- /.intro -->
-
+    </div><!-- intro -->
 
     <section class="section" id="about">
         <div class="container">
@@ -118,9 +119,7 @@
             </div>
 
         </div><!-- /.container -->
-    </section>
-
-
+    </section> <!-- about -->
 
     <div class="stats">
         <div class="container container--stat">
@@ -149,9 +148,7 @@
             </div>
 
         </div>
-    </div>
-
-
+    </div> <!--stats-->
 
     <section class="section" id="services">
         <div class="container">
@@ -201,9 +198,7 @@
             </div>
 
         </div><!-- /.container -->
-    </section>
-
-
+    </section> <!-- services -->
 
     <section class="section  section--devices">
         <div class="container">
@@ -219,9 +214,7 @@
             </div>
 
         </div>
-    </section>
-
-
+    </section> <!-- devices -->
 
     <section class="section">
         <div class="container">
@@ -241,8 +234,8 @@
 
                 <div class="we-do-item">
 
-                    <div class="accordion">
-                        <div class="accordion-item active" data-collapse="#we-do-1">
+                    <div class="accordion one">
+                        <div class="accordion-item" data-collapse="#we-do-1">
                             <div class="accordion-header">
                                 <img class="accordion-icon" src="assets/images/services/photography.png" alt="">
                                 <div class="accordion-title">Photography</div>
@@ -272,30 +265,40 @@
                             </div>
                         </div>
                     </div>   <!-- /.accordion -->
-
                 </div>   <!-- /.wedo__item -->
             </div>   <!-- /.wedo -->
-
         </div>
-    </section>
-
-
+    </section> <!-- accordion -->
 
     <div class="section section--gray">
         <div class="container">
 
             <div class="reviews">
-                <a class="reviews-btn  reviews-btn--prev">Prev</a>
-                <a class="reviews-btn  reviews-btn--next">Next</a>
 
-                <div class="reviews-item">
-                    <img class="reviews-photo" src="assets/images/guy-avatar.png" alt="">
-                    <div class="reviews-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
-                    <div class="reviews-author">Jon Doe</div>
+                <div data-slider>
+
+                    <div>
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/images/guy-avatar.png" alt="">
+                            <div class="reviews-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr one mover.”</div>
+                            <div class="reviews-author">Jon Doe</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/images/guy-avatar-2.png" alt="">
+                            <div class="reviews-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+                            <div class="reviews-author">Clark Zindel</div>
+                        </div>
+                    </div>
+                    
                 </div>
+
             </div>
+
         </div>
-    </div>
+    </div> <!-- reviews 1 -->
 
     <section class="section" id="team">
         <div class="container">
@@ -358,7 +361,7 @@
             </div>
 
         </div>
-    </section>
+    </section> <!-- team -->
 
     <div class="section  section--gray">
         <div class="container">
@@ -387,7 +390,7 @@
             </div>
 
         </div>
-    </div>
+    </div> <!-- logo -->
 
     <section class="section" id="works">
         <div class="container">
@@ -460,23 +463,34 @@
                 </div>
             </div>
         </div>  
-    </section>   
+    </section> <!-- works -->
 
-    <div class="section">
+    <div class="section  section--gray">
         <div class="container">
-
             <div class="reviews">
-                <a class="reviews-btn  reviews-btn--prev">Prev</a>
-                <a class="reviews-btn  reviews-btn--next">Next</a>
 
-                <div class="reviews-item">
-                    <img class="reviews-photo" src="assets/images/guy-avatar.png" alt="">
-                    <div class="reviews-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
-                    <div class="reviews-author">Jon Doe</div>
+                <div data-slider>
+                    <div>
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/images/girl-avatar.png" alt="">
+                            <div class="reviews-text">““Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr one mover.”</div>
+                            <div class="reviews-author">Chloya Smith</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="reviews-item">
+                            <img class="reviews-photo" src="assets/images/guy-avatar-3.png" alt="">
+                            <div class="reviews-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+                            <div class="reviews-author">Henry J White</div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
+
+            </div> 
         </div>
-    </div>
+    </div> <!-- reviews 2 -->
 
     <section class="section section--clients">
         <div class="container">
@@ -520,8 +534,7 @@
                     </div>
             </div>
         </div>
-    </section> 
-
+    </section> <!-- clients -->
 
     <section class="section" id="blogs">
         <div class="container">
@@ -572,7 +585,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- blogs -->
 
     <section class="section section--map">
         <div class="container">
@@ -585,7 +598,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- map -->
 
     <footer class="footer">
         <div class="container">
@@ -610,7 +623,7 @@
                         <input class="subscribe-input" type="email" name="name" placeholder="Enter your email...">
                         <button class="subscribe-btn" type="submit" href="">Subscribe</button>
                     </form>
-                </div> <!-- column -->
+                </div> <!-- column logo -->
 
                 <div class="footer-column footer-column--second">
                     <div class="footer-title">Blogs</div>
@@ -647,7 +660,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> <!-- column blogs -->
 
                 <div class="footer-column footer-column--third">
                     <div class="footer-title">Instagram</div>
@@ -675,7 +688,7 @@
                         </div>
                         <div class="instagram-footer">View more photos</div>
                     </div>
-                </div>
+                </div> <!-- column instagram-->
             </div>
 
             <div class="copyright">
@@ -687,8 +700,11 @@
 
 </div> <!-- page -->
 
+<!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- slick js-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 </body>
-</html> 
+</html>  

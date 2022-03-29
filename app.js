@@ -24,12 +24,11 @@ $(function() {
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
 
-        let $this = $(this)
-        let blockId = $this.data('scroll')
+        let blockId = $(this).data('scroll')
         let blockOffset = $(blockId).offset().top;
 
         $("#nav a").removeClass('active')
-        $this.addClass("active")
+        $(this).addClass("active")
 
         $("html, body").animate({
             scrollTop:  blockOffset
@@ -48,14 +47,40 @@ $(function() {
         
     })
 
-    // COLLAPSE
+    // NAV LINK TOGGLE
+    $(".nav-link").on('click', function(event) {
+        event.preventDefault()
+
+        // CLOSE NAV MENU
+        $("#nav").removeClass('active')
+
+        // MENU NAV TOGGLE
+        $("#nav-toggle").toggleClass('active')
+    })
+
+    // ACCORDION
     $("[data-collapse]").on('click', function(event) {
         event.preventDefault()
 
-        let $this = $(this)
-        let blockId = $this.data('collapse')
+        let blockId = $(this).data('collapse')
 
-        $(blockId).slideToggle()
+        // ACCORDION TOGGLE
 
+        if ($(".accordion").hasClass('one')) {
+            $(".accordion-item").not($(this)).removeClass('active')
+            $(".accordion-content").not($(this)).slideUp(200)
+        }
+
+        // $(blockId).slideToggle(200)
+        $(this).toggleClass('active')
+        
+    })
+
+    // SLIDER REVIEWS
+    $("[data-slider]").slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
     })
 }) 
