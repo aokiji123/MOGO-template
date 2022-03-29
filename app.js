@@ -64,7 +64,6 @@ $(function() {
 
         $(this).toggleClass('active')
         $('.accordion-item').not(this).removeClass('active')
-        
     })
 
     // SLIDER REVIEWS
