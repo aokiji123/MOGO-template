@@ -563,7 +563,7 @@ body {
 .we-do {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0px;
 
     &-item {
         width: 50%;
@@ -574,7 +574,7 @@ body {
         display: block;
         max-width: 100%;
         height: auto;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
 }
@@ -1313,6 +1313,8 @@ body {
         }
     }
 
+    // WE DO
+
     // REVIEWS
     .reviews {
         &-text {
@@ -1413,13 +1415,6 @@ body {
     .section {
         &--gray {
             padding: 40px
-        }
-    }
-
-    // WE DO {
-    .we-do {
-        &-img {
-            margin-top: 60px
         }
     }
 

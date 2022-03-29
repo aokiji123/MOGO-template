@@ -546,7 +546,7 @@ body hr {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0px;
 }
 
 .we-do-item {
@@ -558,7 +558,7 @@ body hr {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .accordion-item {
@@ -1332,9 +1332,6 @@ body hr {
   }
   .section--gray {
     padding: 40px;
-  }
-  .we-do-img {
-    margin-top: 60px;
   }
   .reviews .slick-slider {
     padding: 0 60px;
